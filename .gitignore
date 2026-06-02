@@ -1,0 +1,25 @@
+# Zależności
+node_modules/
+
+# Zmienne środowiskowe — NIGDY nie commituj!
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Build frontendu
+frontend/dist/
+frontend/build/
+
+# Logi
+*.log
+npm-debug.log*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Edytory
+.vscode/
+.idea/
+*.swp
