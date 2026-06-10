@@ -4,6 +4,9 @@ import ShopPage from './pages/ShopPage.jsx';
 import CartPage from './pages/CartPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import AccountPage from './pages/AccountPage.jsx';
+import AdminPage from './pages/AdminPage.jsx';
+// w JSX:
+
 
 const S = {
   toast: {
@@ -46,6 +49,7 @@ export default function App() {
       {page === 'login'   && <LoginPage   navigate={navigate} />}
       {page === 'account' && <AccountPage navigate={navigate} />}
       {page === 'orders'  && <AccountPage navigate={navigate} defaultTab="orders" />}
+      {page === 'admin' && <AdminPage navigate={navigate} />}
 
       {toast && <div style={S.toast}>✓ {toast}</div>}
     </div>

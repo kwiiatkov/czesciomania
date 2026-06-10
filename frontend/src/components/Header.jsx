@@ -90,6 +90,11 @@ export default function Header({ page, navigate, onSearch }) {
             <button style={S.navBtn(page === 'account')} onClick={() => navigate('account')}>
               Konto
             </button>
+            {user.rola === 'admin' && (
+              <button style={{ ...S.navBtn(page === 'admin'), background: page==='admin' ? 'rgba(249,115,22,0.15)' : 'rgba(249,115,22,0.08)', border:'1px solid rgba(249,115,22,0.35)', color:'#f97316' }} onClick={() => navigate('admin')}>
+                ⚙️ Admin
+              </button>
+            )}
             <button style={S.navBtn(page === 'orders')} onClick={() => navigate('orders')}>
               Zamówienia
             </button>
